@@ -1,0 +1,134 @@
+{% extends 'base.html.twig' %}
+{% block titre %} Gestion des paiements {% endblock %}
+
+{% block body %}
+    <div class="pcoded-content">
+        <div class="pcoded-inner-content">
+            <div class="main-body">
+                <div class="page-wrapper">
+
+                    <div class="page-body">
+
+                        <h3>Liste des commandes</h3>
+
+                        <div class="page-header card">
+                            <div class="card-block">
+                                <h5 class="m-b-10">Gestion des paiements
+
+
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+
+                                </h5>
+                                <ul class="breadcrumb-title b-t-default p-t-10">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html.twig"> <i class="fa fa-home"></i> </a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#!">Gestion des paiements</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Listes des paiements</h5>
+
+                                <div class="card-header-right">
+                                    <ul class="list-unstyled card-option">
+                                        <li><i class="fa fa-chevron-left"></i></li>
+                                        <li><i class="fa fa-window-maximize full-card"></i></li>
+                                        <li><i class="fa fa-minus minimize-card"></i></li>
+                                        <li><i class="fa fa-refresh reload-card"></i></li>
+                                        <li><i class="fa fa-times close-card"></i></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <!-- tabs card start -->
+                            <div class="col-sm-12">
+                                <div class="card tabs-card">
+                                    <div class="card-block p-0">
+                                        <!-- Nav tabs -->
+
+                                        <!-- Tab panes -->
+                                        <div class="tab-content card-block">
+                                            <div class="tab-pane active" id="home3" role="tabpanel">
+
+                                                <div class="table-responsive">
+                                                    <table class="table">
+                                                        <tr>
+                                                            <th>Email</th>
+                                                            <th>Nom companie</th>
+
+                                                            <th>Pays</th>
+                                                            <th>District</th>
+                                                            <th>Code Postal</th>
+                                                            <th>Méthode du paiement</th>
+
+
+
+                                                        </tr>
+                                                        {% for paiement in paiements %}
+
+
+                                                        <tr>
+                                                            <td>{{ paiement.email }}</td>
+                                                            <td> {{ paiement.nomCompanie }} </td>
+                                                            <td> {{ paiement.pays }} </td>
+                                                            <td> {{ paiement.district }}</td>
+                                                            <td> {{ paiement.codePostal }}</td>
+
+                                                            <td> {{ paiement.methodedepaiement }}</td>
+                                                            <td>
+                                                                <button>
+
+                                                                    <a " ><i class="fa fa-edit" style="font-size:18px"></i></a></button>
+                                                                <a href="#" onClick="javascript:popUp('')"><i class="fa fa-eye" style="font-size:18px"></i></a>
+                                                                <button>
+
+                                                                    <a "><i class="fa fa-trash" style="font-size:18px"></i></a>
+
+
+                                                                </button>
+                                                               
+                                                            </td>
+
+
+                                                            {% endfor %}
+
+                                                        </tr>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- tabs card end -->
+
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                    <div id="styleSelector">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

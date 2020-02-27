@@ -1,0 +1,31 @@
+club_competition:
+    resource: "@ClubBundle/Resources/config/routing/competition.yml"
+    prefix:   /competition
+
+club_homepage:
+    path:     /
+    defaults: { _controller: ClubBundle:Default:index }
+create:
+    path:     /create
+    defaults: { _controller: ClubBundle:Cclub:create }
+read:
+    path:     /read
+    defaults: { _controller: ClubBundle:Cclub:read }
+read1:
+    path:     /read1
+    defaults: { _controller: ClubBundle:Cclub:read1 }
+delete:
+    path:     /delete/{id}
+    defaults: { _controller: ClubBundle:Cclub:delete }
+update:
+    path:     /update/{id}
+    defaults: { _controller: ClubBundle:Cclub:update }
+recherche:
+    path:     /recherche
+    defaults: { _controller: ClubBundle:Cclub:recherche }
+gagner:
+    path:     /gagner/{id}
+    defaults: { _controller: ClubBundle:Cclub:gagner }
+classement:
+    path:     /classement
+    defaults: { _controller: ClubBundle:Cclub:classement }

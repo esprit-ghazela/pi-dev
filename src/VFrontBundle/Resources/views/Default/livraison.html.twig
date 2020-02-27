@@ -1,0 +1,51 @@
+{% extends 'front_base.html.twig' %}
+
+{% block body %}
+    <section class="blog-banner-area" id="category">
+        <div class="container h-100">
+            <div class="blog-banner">
+                <div class="text-center">
+                    <h1>Livraison produit</h1>
+                    <nav aria-label="breadcrumb" class="banner-breadcrumb">
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ end banner area ================= -->
+
+
+    <!--================Checkout Area =================-->
+    <section class="checkout_area section-margin--small">
+        <div class="container">
+
+
+            <div class="billing_details">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h3>Détails livraison</h3>
+                        {{ form_start(form) }}
+                        <div class="form-group">
+                            {{ form_label(form.adresseLivr, 'Adresse de la livraison') }}
+                            {{ form_widget(form.adresseLivr, {'attr': { 'class' : 'form-control'}}) }}
+                        </div>
+                        <div class="form-group">
+                            {{ form_label(form.datelivr, 'Date de la livraison') }}
+                            {{ form_widget(form.datelivr, {'attr': { 'class' : 'form-control'}}) }}
+                        </div>
+
+                        <div class="form-group">
+
+                            {{ form_widget(form.Submit, {'attr': { 'class' : 'form-control'}}) }}
+
+                            {{ form_end(form) }}
+                    </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+{% endblock %}

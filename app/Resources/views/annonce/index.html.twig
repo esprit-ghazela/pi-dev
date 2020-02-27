@@ -1,0 +1,73 @@
+{% extends  'base.html.twig' %}
+{% block body %}
+
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <div class="main-body">
+            <div class="page-wrapper">
+
+                <div class="page-body">
+                    <input  id="myinput" type="text" placeholder="search..">
+
+                    <div class="page-header card">
+    <h1>Annonces list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="mytable">
+        {% for annonce in annonces %}
+            <tr>
+                <td><a href="{{ path('annonce_show', { 'id': annonce.id }) }}">{{ annonce.id }}</a></td>
+                <td>{{ annonce.nom }}</td>
+                <td>{{ annonce.description }}</td>
+                <td> <td><img src="{{asset('images/'~annonce.Image)}} "style="width: 50px;height: 50px"></td></td>
+                <td>{% if annonce.date %}{{ annonce.date|date('Y-m-d') }}{% endif %}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('annonce_show', { 'id': annonce.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('annonce_edit', { 'id': annonce.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('annonce_new') }}">Create a new annonce</a>
+        </li>
+    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        $(document).read(function () {
+            $("#myinput").on("keyup",function () {
+                var value =$(this).val().toLowerCase();
+                $("#mytable tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value)>-1)
+
+                })
+
+            })
+        })
+    </script>
+
+{% endblock %}

@@ -1,0 +1,42 @@
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <div class="main-body">
+            <div class="page-wrapper">
+
+                <div class="page-body">
+
+                    <div class="page-header card">
+                        <div class="card-block">
+                            <h5 class="m-b-10">Gestion des clubs</h5>
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+
+
+                            </h5>
+                            <ul class="breadcrumb-title b-t-default p-t-10">
+                                <li class="breadcrumb-item">
+                                    <a href="accuil"> <i class="fa fa-home"></i> </a>
+                                </li>
+                                <li class="breadcrumb-item"><a href="#!">Gestion des clubs</a>
+                                <li class="breadcrumb-item"><a href="#!">modifier un club</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card"></br>
+                        <h3> Modifier club  </h3>
+
+{{ form_start(form) }}
+
+{{ form_end(form) }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

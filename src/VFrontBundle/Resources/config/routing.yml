@@ -1,0 +1,52 @@
+v_front_homepage:
+    path:     /
+    defaults: { _controller: VFrontBundle:Default:index }
+front_accuil:
+    path:     /front_accuil
+    defaults: { _controller: VFrontBundle:Default:index }
+panier:
+    path:     /panier
+    defaults: { _controller: GProduitBundle:Panier:panier }
+
+category:
+    path:     /category
+    defaults: { _controller: GProduitBundle:Panier:afficher }
+
+afficherPanier:
+    path:     /afficherPanier
+    defaults: { _controller: VFrontBundle:Panier:afficherPanier }
+
+detail:
+    path:     /detail/{id}
+    defaults: { _controller: GProduitBundle:Produit:detail }
+
+ajouterpanier:
+    path:     /ajouterpanier/{id}
+    defaults: { _controller: GProduitBundle:Panier:ajouterpanier }
+
+supprimerpanierp:
+    path:     /supprimerpanierp/{id}
+    defaults: { _controller: GProduitBundle:Panier:supprimerpanierp }
+
+panierCm:
+    path:     /panierCm
+    defaults: { _controller: GProduitBundle:Panier:menu }
+v_front_index:
+    path:     /e
+    defaults: { _controller: VFrontBundle:Main:index }
+v_front_cart:
+    path:     /c
+    defaults: { _controller: VFrontBundle:Main:cart }
+v_front_comm:
+    path:     /comm
+    defaults: { _controller: VFrontBundle:Main:comm }
+v_front_livr:
+    path:  /liv
+    defaults: { _controller: VFrontBundle:Main:ajouter }
+v_front_order:
+    path:     /commande
+    defaults: { _controller: VFrontBundle:Main:afficher }
+v_front_livraison:
+    path:     /
+    defaults: { _controller: VFrontBundle:Main:paiement }
+

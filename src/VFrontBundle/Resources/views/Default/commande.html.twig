@@ -1,0 +1,117 @@
+{% extends 'front_base.html.twig' %}
+
+{% block body %}
+<section class="blog-banner-area" id="category">
+    <div class="container h-100">
+        <div class="blog-banner">
+            <div class="text-center">
+                <h1>Confirmation commande</h1>
+                <nav aria-label="breadcrumb" class="banner-breadcrumb">
+
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ================ end banner area ================= -->
+
+<!--================Order Details Area =================-->
+<section class="order_details section-margin--small">
+    <div class="container">
+
+
+    </div>
+
+    <div class="order_details_table">
+        <h2>Détails de la commande</h2>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Produit</th>
+
+                    <th scope="col">Date commande</th>
+
+
+                </tr>
+                </thead>
+                <tbody>
+
+                {% for commande in commandes %}
+                {% set amount = commande.prixprod + commande.prixlivr  %}
+                <tr>
+                    <td>
+                        <p>{{ commande.produit }}</p>
+                    </td>
+                    <td>
+                        <h5>{{ commande.datecom|date }}</h5>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Prix Produit</h4>
+                    </td>
+                    <td>
+                        <h5></h5>
+                    </td>
+                    <td>
+                        <p>{{ commande.prixprod }} DT</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Prix Livraison</h4>
+                    </td>
+                    <td>
+                        <h5></h5>
+                    </td>
+                    <td>
+                        <p>{{ commande.prixlivr }} DT</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h4>Prix totale</h4>
+                    </td>
+                    <td>
+                        <h5></h5>
+                    </td>
+                    <td>
+                        <h4> {{ amount }}DT</h4>
+                    </td>
+                    Total price:  {{ commande.amount }}DT
+
+
+                    {% endfor %}
+
+                </tr>
+                <tr class="out_button_area">
+                    <td class="d-none-l">
+
+                    </td>
+                    <td class="">
+
+                    </td>
+                    <td>
+
+                    </td>
+                    <td>
+                        <div class="checkout_btn_inner d-flex align-items-center">
+                            <a class="gray_btn" href="#">Boutique</a>
+                            <a class="gray_btn" class="primary-btn ml-2" href="{{ path('v_front_comm') }}">Vers la caisse</a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    </div>
+
+</section>
+
+<!--================End Order Details Area =========
+{% endblock %}

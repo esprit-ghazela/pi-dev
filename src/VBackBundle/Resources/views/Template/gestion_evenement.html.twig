@@ -1,0 +1,53 @@
+{% extends 'front_base1.html.twig' %}
+
+{% block reclamation %}
+    <div class="pcoded-content">
+        <div class="pcoded-inner-content">
+            <div class="main-body">
+
+
+                <div class="page-body">
+                    <h2>Listes des Categories:</h2>
+                    <br><br><br>
+                </div>
+                <div class="card-block table-border-style">
+                    <div class="table-responsive">
+
+
+
+
+                        {% for t in  projets %}
+
+                            <h5> *){{ t.type}} {{ t.nom}}  </h5>
+                            <h5>description:{{ t.description}}.</h5>
+
+                            <br><br>
+                        {% endfor %}
+
+                        <span>
+                                              <button type="button" class="btn btn-default btn-sm"><a href="{{ path("ajouterRec") }}"><i class="icofont icofont-plus"></i>Ajouter Reclamation</a></button>
+                                            </span>
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div id="styleSelector">
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+{% endblock %}

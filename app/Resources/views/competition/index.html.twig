@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <div class="main-body">
+            <div class="page-wrapper">
+
+                <div class="page-body">
+
+                    <div class="page-header card">
+                        <div class="card-block">
+    <h1>Competitions list</h1>
+
+    <table>
+        <thead>
+        <div class="card-block table-border-style">
+            <div class="table-responsive">
+                <table class="table table-hover">
+
+            <tr>
+                <th>Id</th>
+                <th>Region</th>
+                <th>Nom competition</th>
+                <th>Debut</th>
+                <th>Final</th>
+                <th>Prime</th>
+
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="mytable">
+        {% for competition in competitions %}
+<tr>
+                <td><a href="{{ path('competition_show', { 'id': competition.id }) }}">{{ competition.id }}</a></td>
+                <td>{{ competition.region }}</td>
+            <td>{{ competition.nomcomp}}</td>
+                <td>{% if competition.debut %}{{ competition.debut|date('Y-m-d') }}{% endif %}</td>
+                <td>{% if competition.final %}{{ competition.final|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ competition.prime }}</td>
+
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('competition_show', { 'id': competition.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('competition_edit', { 'id': competition.id }) }}">edit</a>
+                        </li>
+
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <button  class="btn btn-success" ><a href={{ path("competition_new") }}> Create a new competition</a></button>
+
+
+        </li>
+    </ul>
+
+                    </div>
+                </div><button  class="btn btn-success" ><a href={{ path("_graphePie") }}> statistique</a></button>
+                    </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

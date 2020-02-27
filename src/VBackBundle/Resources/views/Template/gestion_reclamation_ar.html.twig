@@ -1,0 +1,117 @@
+{% extends 'base.html.twig' %}
+{% block titre %} Gestion des réclamations {% endblock %}
+
+{% block body %}
+    <div class="pcoded-content">
+        <div class="pcoded-inner-content">
+            <div class="main-body">
+                <div class="page-wrapper">
+
+                    <div class="page-body">
+
+                        <div class="page-header card">
+                            <div class="card-block">
+                                <h5 class="m-b-10">Gestion des réclamations
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                    <span>
+                                              <button  class="btn btn-success"><a href="{{ path("ajouterRec") }}"><i class="icofont icofont-plus"></i>Ajouter</a></button>
+                                            </span>
+
+
+                                </h5>
+                                <ul class="breadcrumb-title b-t-default p-t-10">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html"> <i class="fa fa-home"></i> </a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#!">Gestion des réclamations</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Listes des réclamations</h5>
+                                <input class="form-control" id="myInput" type="text" placeholder="Search..">
+                                <div class="card-header-right">
+                                    <ul class="list-unstyled card-option">
+                                        <li><i class="fa fa-chevron-left"></i></li>
+                                        <li><i class="fa fa-window-maximize full-card"></i></li>
+                                        <li><i class="fa fa-minus minimize-card"></i></li>
+                                        <li><i class="fa fa-refresh reload-card"></i></li>
+                                        <li><i class="fa fa-times close-card"></i></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="card-block table-border-style">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+
+                                        <tr>
+                                            <th>ID Reclamation</th>
+                                            <th>Nom</th>
+                                            <th>Prenom</th>
+                                            <th>Type</th>
+                                            <th>Reclamation</th>
+                                            <th>Date</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+
+                                        <tbody id="myTable">
+                                        <tr>
+                                            {% for t in  Rec %}
+                                        <tr>
+                                            <td> {{ t.id }}</td>
+                                            <td> {{ t.nom }}</td>
+                                            <td> {{ t.prenom}}</td>
+                                            <td> {{ t.Categorie.nom}}</td>
+                                            <td> {{ t.reclamation }}</td>
+                                            <td> {{ t.date|date }}</td>
+                                            <td><a href="{{ path("deleteRec",{"id":t.id})}}"><i class="fa fa-trash" style="font-size:18px"></i></a></td>
+                                            <td><a href="{{ path("restaurer",{"id":t.id})}}"><i class="fa fa-eye" style="font-size:18px"></i></a></td>
+
+                                        </tr>
+                                        {% endfor %}
+
+                                        </tr>
+
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <a href="{{ path("gestion_reclamation")}}"><i class="fa fa-archive" style="font-size:18px">  Liste des Reclamations</i></a>
+                        </button>
+                        <br>
+                        <br>
+                        <button type="button" class="btn btn-default btn-sm">
+                            <a href="{{ path("gestion_pdf")}}"><i class="fa fa-file-pdf-o" style="font-size:18px">  PDF</i></a>
+                        </button>
+
+
+
+
+
+                    </div>
+
+                    <div id="styleSelector">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

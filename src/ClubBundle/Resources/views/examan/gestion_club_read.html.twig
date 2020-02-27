@@ -1,0 +1,34 @@
+
+    {% extends 'base.html.twig' %}
+    {% block body %}
+    <div class="pcoded-content">
+        <div class="pcoded-inner-content">
+            <div class="main-body">
+                <div class="page-wrapper">
+
+                    <div class="page-body">
+                        <h3>ajouter club</h3>
+
+                        <table border="3px">
+
+                            <td><b>id</b></td>
+                            <td><b>nom</b></td>
+                            <td><b>date</b></td>
+                            <td><b>logo</b></td>
+
+                            {% for club in clubs %}
+                                <tr>
+
+                                    <td>{{ club.id }}</td>
+                                    <td>{{ club.nom }}</td>
+                                    <td>{{ club.dateCreation|date}}</td>
+                                    <td><img src="{{ asset('images/') }} {{ club.nomImage }}" style="width: 50px:height: 50px" ></td>
+                                </tr>
+                            {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

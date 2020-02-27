@@ -1,0 +1,77 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <div class="main-body">
+            <div class="page-wrapper">
+
+                <div class="page-body">
+
+
+
+
+
+
+                    <button ><a href={{ path("read") }}> <i></i> read </a></button>
+                    <button><a href={{ path("create") }}> <i></i> Ajouter </a></button>
+                    <div class="card">
+                        <div class="card-header">
+
+
+                            <div class="card-header-right">
+                                <ul class="list-unstyled card-option">
+                                    <li><i class="fa fa-chevron-left"></i></li>
+                                    <li><i class="fa fa-window-maximize full-card"></i></li>
+                                    <li><i class="fa fa-minus minimize-card"></i></li>
+                                    <li><i class="fa fa-refresh reload-card"></i></li>
+                                    <li><i class="fa fa-times close-card"></i></li>
+                                </ul>
+                            </div>
+
+{#                        <div class="card-block table-border-style">#}
+                            <div class="table-responsive">
+    <table class="table">
+        <thead>
+        {% set count= 0 %}
+        <tr>
+            <th>Classement</th>
+            <th>Nom</th>
+            <th>Solde</th>
+            <th>Logo</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% set count= count+1 %}
+        {% for projet in projets  %}
+            <tr class="table-primary">
+                <td>{{ count}}</td>
+            <td>{{ projet.nom }}</td>
+            <td>{{ projet.solde}}</td>
+            <td><img src="{{asset('images/'~projet.nomImage)}}" style="width: 100px;height: 100px" class="rounded-circle"></td>
+
+            </tr>
+            {% set count= count+1 %}
+        {% endfor %}
+        </tbody>
+    </table>
+        </div></div></div>
+</div>
+
+</body>
+</html>
+{% endblock %}
+

@@ -1,0 +1,108 @@
+{% extends 'base.html.twig' %}
+{% block titre %} Gestion des publicités {% endblock %}
+
+{% block body %}
+    <div class="pcoded-content">
+        <div class="pcoded-inner-content">
+            <div class="main-body">
+                <div class="page-wrapper">
+
+                    <div class="page-body">
+
+                        <div class="page-header card">
+                            <div class="card-block">
+                                <h5 class="m-b-10">Gestion des publicitées
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                    <span>
+                                        <button  class="btn btn-success"><a href="{{ path("createt") }}"><i class="icofont icofont-plus"></i>Ajouter</a></button>
+                                            </span>
+
+
+                                </h5>
+                                <ul class="breadcrumb-title b-t-default p-t-10">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html"> <i class="fa fa-home"></i> </a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#!">Gestion des publicitées</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Listes des publicitées</h5>
+                                <input class="form-control" id="myInput" type="text" placeholder="Search..">
+
+
+                                <div class="card-header-right">
+                                    <ul class="list-unstyled card-option">
+                                        <li><i class="fa fa-chevron-left"></i></li>
+                                        <li><i class="fa fa-window-maximize full-card"></i></li>
+                                        <li><i class="fa fa-minus minimize-card"></i></li>
+                                        <li><i class="fa fa-refresh reload-card"></i></li>
+                                        <li><i class="fa fa-times close-card"></i></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                            <div class="card-block table-border-style">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nom</th>
+                                            <th>Description</th>
+                                            <th>DATE DEBUT</th>
+                                            <th>DATE FIN</th>
+                                            <th>IMAGE</th><th>ACTION</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody id="myTable">
+                                        <tr>
+                                            {% for t in  projets%}
+                                        <tr>
+                                            <td> {{ t.id }}</td>
+                                            <td> {{ t.nom }}</td>
+                                            <td> {{ t.description }}</td>
+                                            <td> {{ t.dateDebut|date }}</td>
+                                            <td> {{ t.dateFin|date }}</td>
+                                            <td><img src="{{asset('images/'~t.nomImage)}} "style="width: 50px;height: 50px"></td>
+                                            <td><a href="{{ path("supp",{"id":t.id})}}"><i class="fa fa-trash" style="font-size:18px"></i></a></td>
+                                           td>
+                                            <td><a href="{{ path("edit",{"id":t.id})}}"><i class="fa fa-eye" style="font-size:18px"></i></a></td>
+                                        </tr>
+                                        {% endfor %}
+
+                                        </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                    <div id="styleSelector">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

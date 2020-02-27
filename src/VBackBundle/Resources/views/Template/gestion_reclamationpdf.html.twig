@@ -1,0 +1,31 @@
+{% block body %}
+    <h1 align="center">Listes Des Reclamation</h1>
+    <table class="table table-condensed">
+        <thead>
+        <tr>
+            <th>ID Reclamation</th>
+            <th>Nom</th>
+            <th>Prenom</th>
+            <th>Type</th>
+            <th>Reclamation</th>
+            <th>Date</th>
+        </tr>
+        </thead>
+        <tbody >
+
+        {% for t in  Rec %}
+            <tr>
+                <td> {{ t.id }}</td>
+                <td> {{ t.nom }}</td>
+                <td> {{ t.prenom}}</td>
+                <td> {{ t.Categorie.nom}}</td>
+                <td> {{ t.reclamation }}</td>
+                <td> {{ t.date|date }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
+
+

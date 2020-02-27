@@ -1,0 +1,40 @@
+event_homepage:
+    path:     /
+    defaults: { _controller: EventBundle:Default:index }
+ajouterev:
+    path:     /ajouter
+    defaults: { _controller: EventBundle:Event:create }
+readev:
+    path:     /afficher
+    defaults: { _controller: EventBundle:Event:read }
+deleteev:
+    path:     /delete/{id}
+    defaults: { _controller: EventBundle:Event:delete }
+modifierev:
+    path:     /modifier/{id}
+    defaults: { _controller: EventBundle:Event:modifier }
+ajouterRec:
+    path:     /ajouterRec
+    defaults: { _controller: EventBundle:Reclamation:create }
+ajouterCat:
+    path:     /ajouterCat
+    defaults: { _controller: EventBundle:CategorieREC:create }
+deleteRec:
+    path:     /deleteRec/{id}
+    defaults: { _controller: EventBundle:Reclamation:delete }
+modifierRec:
+    path:     /modifierRec/{id}
+    defaults: { _controller: EventBundle:Reclamation:modifier }
+archiver:
+    path:     /archiver/{id}
+    defaults: { _controller: EventBundle:Reclamation:archiver }
+restaurer:
+    path:     /restaurer/{id}
+    defaults: { _controller: EventBundle:Reclamation:restaurer }
+modifierCat:
+    path:     /modifierCat/{id}
+    defaults: { _controller: EventBundle:CategorieREC:modifier }
+deleteCat:
+    path:     /deleteCat/{id}
+    defaults: { _controller: EventBundle:CategorieREC:delete }
+

@@ -1,0 +1,8 @@
+paiement_homepage:
+    path:     /
+    defaults: { _controller: PaiementBundle:Default:index }
+paiement_afficher:
+    path:     /Pai
+    defaults: { _controller: PaiementBundle:Paiement:paiement }
+
+

@@ -1,0 +1,40 @@
+
+{% extends  'base.html.twig' %}
+{% block body %}
+    <div class="pcoded-content">
+        <div class="pcoded-inner-content">
+            <div class="main-body">
+                <div class="page-wrapper">
+
+                    <div class="page-body">
+
+                        <div class="page-header card">
+                            <div class="card-block">
+                                <h5 class="m-b-10">Gestion des Categories
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                                    <span>
+                                        <button  class="btn btn-success"><a href="{{ path("gestion_evenement") }}"><i class="icofont icofont-plus"></i>Afficher</a></button>
+                                            </span>
+
+
+                                </h5>
+                                <ul class="breadcrumb-title b-t-default p-t-10">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html"> <i class="fa fa-home"></i> </a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#!">Gestion des Categories</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card"></br>
+                                <h3>Ajouter  des Categorie</h3>
+
+                            {{ form_start(form) }}
+
+                            {{ form_end(form) }}
+                        </div>
+                    </div></div></div></div></div>
+{% endblock  %}

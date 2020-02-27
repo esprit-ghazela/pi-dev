@@ -1,0 +1,36 @@
+{% extends 'front_base.html.twig' %}
+
+{% block titre %} Gestion des clubs {% endblock %}
+
+{% block body %}
+
+                              <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>NOM DU CLUB</th>
+                                            <th>DATECREATION</th>
+                                            <th>LOGO</th>
+                                            <th></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        {% for club in clubs %}
+                                        <tr>
+
+                                            <td>{{ club.id }}</td>
+                                            <td>{{ club.nom }}</td>
+                                            <td>{{ club.dateCreation|date}}</td>
+                                            <td><img src="{{asset('images/'~club.nomImage)}}" style="width: 100px;height: 100px" ></td>
+
+
+                                            {% endfor %}
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+{% endblock %}

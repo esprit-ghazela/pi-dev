@@ -1,0 +1,23 @@
+pub_annonce:
+    resource: "@PubBundle/Resources/config/routing/annonce.yml"
+    prefix:   /annonce
+
+
+pub_homepage:
+    path:     /
+    defaults: { _controller: PubBundle:Default:index }
+createt:
+    path:     /createt
+    defaults: { _controller: PubBundle:Pub:createt }
+supp:
+    path:     /supp/{id}
+    defaults: { _controller: PubBundle:Pub:delete }
+edit:
+    path:     /edit/{id}
+    defaults: { _controller: PubBundle:Pub:modifier }
+note:
+    path:     /note/{id}
+    defaults: { _controller: PubBundle:Pub:note }
+top:
+    path:     /top
+    defaults: { _controller: PubBundle:Pub:top }

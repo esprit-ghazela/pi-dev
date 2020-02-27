@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <div class="main-body">
+            <div class="page-wrapper">
+
+                <div class="page-body">
+
+                    <div class="page-header card">
+                        <div class="card-block">
+
+    <h1>Competition</h1>
+
+    <table>
+        <tbody id="mytable">
+            <tr>
+                <th>Id</th>
+                <td>{{ competition.id }}</td>
+            </tr>
+            <tr>
+                <th>Region</th>
+                <td>{{ competition.region }}</td>
+            </tr>
+            <tr>
+                <th>Debut</th>
+                <td>{% if competition.debut %}{{ competition.debut|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Final</th>
+                <td>{% if competition.final %}{{ competition.final|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Prime</th>
+                <td>{{ competition.prime }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('competition_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('competition_edit', { 'id': competition.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

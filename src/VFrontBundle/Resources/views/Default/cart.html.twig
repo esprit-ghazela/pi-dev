@@ -1,0 +1,185 @@
+{% extends 'base2.html.twig' %}
+
+{% block content %}
+    <section class="blog-banner-area" id="category">
+        <div class="container h-100">
+            <div class="blog-banner">
+                <div class="text-center">
+                    <h1><P>Panier</P></h1>
+                    <nav aria-label="breadcrumb" class="banner-breadcrumb">
+
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ================ end banner area ================= -->
+
+
+
+    <!--================Cart Area =================-->
+    <section class="cart_area">
+        <div class="container">
+            <div class="cart_inner">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Produit</th>
+                            <th scope="col">Prix</th>
+                            <th scope="col">Quantité</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="media">
+                                    <div class="d-flex">
+                                        <img src="img/cart/velo2.png" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <p>Vélo VTT IN-OUT Mtb 24</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h5>150 DT</h5>
+                            </td>
+                            <td>
+                                <div class="product_count">
+                                    <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
+                                           class="input-text qty">
+                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                            class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
+                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                            class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <h5>15ODT</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="media">
+                                    <div class="d-flex">
+                                        <img src="img/cart/velo3.png" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <p>Vélo VTT IN-OUT Mtb 26</p>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <h5>130DT</h5>
+                            </td>
+                            <td>
+                                <div class="product_count">
+                                    <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
+                                           class="input-text qty">
+                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                            class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
+                                    <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                            class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
+                                </div>
+                            </td>
+                            <td>
+                                <h5>130DT</h5>
+                            </td>
+                        </tr>
+
+                        <tr class="bottom_button">
+                            <td>
+                                <a class="button" href="#">Mise à jour panier</a>
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <div class="cupon_text d-flex align-items-center">
+                                    <input type="text" placeholder="Code Coupon">
+                                    <a class="primary-btn" href="#">Appliquer</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <h5>total</h5>
+                            </td>
+                            <td>
+                                <h5>280DT</h5>
+                            </td>
+                        </tr>
+                        <tr class="shipping_area">
+                            <td class="d-none d-md-block">
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <h5>Livraison</h5>
+                            </td>
+                            <td>
+                                <div class="shipping_box">
+                                    <ul class="list">
+                                        <li><a href="#">Livraison gratuite</a></li>
+                                        <li><a href="#">Forfait: 10 DT</a></li>
+                                    </ul>
+                                    <h6>Calculer Frais de livraison <i class="fa fa-caret-down" aria-hidden="true"></i></h6>
+                                    <select class="shipping_select">
+                                        <option value="1">Tunisia</option>
+                                        <option value="2">India</option>
+                                        <option value="4">Pakistan</option>
+                                    </select>
+                                    <select class="shipping_select">
+                                        <option value="1">choisir ville</option>
+                                        <option value="2">choisir ville</option>
+                                        <option value="4">choisir ville</option>
+                                    </select>
+                                    <input type="text" placeholder="Postcode/Zipcode">
+                                    <a class="gray_btn" href="#">Détails de mise à jour</a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="out_button_area">
+                            <td class="d-none-l">
+
+                            </td>
+                            <td class="">
+
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+                                <div class="checkout_btn_inner d-flex align-items-center">
+                                    <a class="gray_btn" href="#">Boutique</a>
+                                    {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+
+                                    <a href="{{ path('v_front_order') }}" class="primary-btn ml-2">Vers la caisse</a>
+                                    {% else %}
+                                    <a href="{{ path('fos_user_security_login') }}" class="primary-btn ml-2">Vers la caisse</a>
+                                    {% endif %}
+
+
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

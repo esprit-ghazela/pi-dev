@@ -1,0 +1,41 @@
+
+{% extends  'front_base.html.twig' %}
+{% block reclamation %}
+    <div class="pcoded-content" xmlns="http://www.w3.org/1999/html">
+        <div class="pcoded-inner-content">
+            <div class="main-body">
+                <div class="page-wrapper">
+
+                    <div class="page-body">
+
+                        <div class="page-header card">
+                            <div class="card-block">
+
+
+
+
+
+                                <ul class="breadcrumb-title b-t-default p-t-10">
+                                    <li class="breadcrumb-item">
+                                        <a href="{{ asset('index.html')}}"> <i class="fa fa-home"></i> </a>
+                                    </li>
+                                    <li class="breadcrumb-item"><a href="#!">Gestion des Reclamations</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card"></br>
+                            <h3>Ajouter  des Reclamations</h3>
+                            {{ form_start(form) }}
+
+                            {{ form_end(form) }}
+                            <span>
+                                        <button><a href="{{ path("gestion_reclamation") }}">Afficher</a></button>
+                                            </span>
+                            <span>
+                                        <button><a href="{{ path("gestion_evenement") }}">Consulter les Categories</a></button>
+                                            </span>
+                        </div>
+                    </div></div></div></div></div>
+{% endblock  %}

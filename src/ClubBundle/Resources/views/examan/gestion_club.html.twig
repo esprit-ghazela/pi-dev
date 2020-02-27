@@ -1,0 +1,50 @@
+
+{% extends 'base.html.twig' %}
+{% block titre %}Ajouter{% endblock %}
+{% block body %}
+    <div class="pcoded-content">
+    <div class="pcoded-inner-content">
+    <div class="main-body">
+    <div class="page-wrapper">
+
+    <div class="page-body">
+
+        <div class="page-header card">
+            <div class="card-block">
+                <h5 class="m-b-10">Gestion des clubs</h5>
+
+
+                <button  class="btn btn-success" ><a href={{ path("read") }}> <i class="icofont icofont-plus"></i>afficher liste clubs</a></button>
+                <ul class="breadcrumb-title b-t-default p-t-10">
+                    <li class="breadcrumb-item">
+                        <a href="accuil"> <i class="fa fa-home"></i> </a>
+                    </li>
+                    <li class="breadcrumb-item"><a href="#!">Gestion des clubs</a>
+                    <li class="breadcrumb-item"><a href="#!">Ajout d'un club</a>
+
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div>
+
+
+
+            <h3 class="m-b-10"> ajouter un club </h3>
+            <div>
+    {{ form_start(form) }}
+
+
+
+    {{ form_end(form) }}
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+{% endblock %}

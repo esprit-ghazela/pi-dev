@@ -1,0 +1,6 @@
+graphe_homepage:
+    path:     /
+    defaults: { _controller: GrapheBundle:Default:index }
+_graphePie:
+    path:     /pie
+    defaults: { _controller: GrapheBundle:Default:index}

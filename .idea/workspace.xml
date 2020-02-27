@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0caab014-e81b-4fc3-922a-298bc4d943e0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_publicite2.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_publicite3.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VFrontBundle/Controller/MainController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VFrontBundle/Resources/views/FrontTemplate/cart.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VFrontBundle/Resources/views/FrontTemplate/category.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VFrontBundle/Resources/views/FrontTemplate/detail.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/VFrontBundle/Resources/views/FrontTemplate/panierCm.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/VBack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/VBack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AppKernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppKernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/front_base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/front_base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/security.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClubBundle/Entity/Club.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClubBundle/Entity/Club.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClubBundle/Resources/views/examan/classement.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClubBundle/Resources/views/examan/classement.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBundle/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBundle/Form/PartRegistrationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Form/PartRegistrationType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserBundle/Resources/config/services.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserBundle/Resources/config/services.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VBackBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/VBackBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VBackBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/VBackBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_administrateur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_administrateur.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_client.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_client.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_evenement.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_evenement.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_partenaire.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_partenaire.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_publicite.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_publicite.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_reclamation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_reclamation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_stock.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/VBackBundle/Resources/views/Template/gestion_stock.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VFrontBundle/Controller/DefaultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/VFrontBundle/Controller/DefaultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VFrontBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/VFrontBundle/Resources/config/routing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/VFrontBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/VFrontBundle/Resources/views/Default/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/14067648_893576087413021_5427385332413602400_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/1486564400-account_81513.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/29351538_780300058833697_9144157008630186196_o (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/45417bf86e6b47a694ad73053f3eb93e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/642212f803f2e733965467ed076bdc14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/65887113_631462610698417_3949588420015161344_n.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/69578887_447812319156071_1019498126513274880_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/images/images.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/images/29351538_780300058833697_9144157008630186196_o.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/images/45417bf86e6b47a694ad73053f3eb93e.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/images/50272066_346054905999901_8439722775156883456_o.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/images/62111322_1332386006919366_2431945460932411392_o.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/images/70523479_2632680073644242_3730948780485246976_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../web/images/79351685_2718595981517127_8899117107111788544_n.jpg" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="2c7e9441-67de-4526-a7ea-72c2e556e3bf" />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="php7.3.5">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/incenteev/composer-parameter-handler" />
+      <path value="$PROJECT_DIR$/vendor/sensiolabs/security-checker" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/sensio/distribution-bundle" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/sensio/generator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-apcu" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/symfony" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/gregwar/captcha-bundle" />
+      <path value="$PROJECT_DIR$/vendor/gregwar/captcha" />
+      <path value="$PROJECT_DIR$/vendor/cmen/google-charts-bundle" />
+      <path value="$PROJECT_DIR$/vendor/webonyx/graphql-php" />
+      <path value="$PROJECT_DIR$/vendor/nomaya/social-bundle" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
+      <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1XWr8F7kUzu5i4M8XoFnuJKuVUf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/VFrontBundle/Resources/views" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\v\VBack\src\VFrontBundle\Resources\views" />
+      <recent name="C:\wamp64\www\v\VBack\app\Resources\FOSUserBundle\views\Registration" />
+      <recent name="C:\wamp64\www\v\VBack\app\Resources\FOSUserBundle\views\Security" />
+      <recent name="C:\wamp64\www\v\VBack\src\VBackBundle\Resources" />
+      <recent name="C:\wamp64\www\v\VBack\app\Resources\FOSUserBundle" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\v\VBack\src\VFrontBundle\Controller" />
+      <recent name="C:\wamp64\www\v\VBack\app\Resources\views\default" />
+      <recent name="C:\wamp64\www\v\VBack\src" />
+      <recent name="C:\wamp64\www\v\VBack\app\Resources\views" />
+      <recent name="C:\wamp64\www\v\VBack\src\VBackBundle\Resources\views\Template" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="s assets:install" />
+      <command value="s generate:bundle --namespace UserBundle" />
+      <command value="s fos:user:promote client ROLE_CLIENT" />
+      <command value="s fos:user:create" />
+      <command value="s fos:user:promote test ROLE_USER" />
+      <command value="s fos:user:promote test4 ROLE_USER" />
+      <command value="s fos:user:promote holla ROLE_USER" />
+      <command value="s fos:user:promote holla ROLE_CLIENT" />
+      <command value="s fos:user:promote holla ROLE_CL" />
+      <command value="s fos:user:create  client client@client.tn client " />
+      <command value="s fos:user:demote test ROLE_ADMIN" />
+      <command value="s fos:user:promote test ROLE_CLIENT" />
+      <command value="s doctrine:database:create" />
+      <command value="s doctrine:schema:update " />
+      <command value="s doctrine:schema:create" />
+      <command value="s doctrine:generate:entity Club" />
+      <command value="s doctrine:generate:form -h" />
+      <command value="s doctrine:generate:form ClubBundle:Club" />
+      <command value="s generate:controller" />
+      <command value="s doctrine:generate:entity" />
+      <command value="s doctrine:generate:crud" />
+      <command value="new CMEN\GoogleChartsBundle\CMENGoogleChartsBundle(), " />
+      <command value="require cmen/google-charts-bundle " />
+      <command value="php -d memory_limit=-1 composer.phar  c require cmen/google-charts-bundle" />
+      <command value="s generate:bundle " />
+      <command value="php -d memory_limit=-1 composer.phar  require cmen/google-charts-bundle" />
+      <command value="c require cmen/google-charts-bundle" />
+      <command value="s generate:bundle" />
+      <command value="composer dump-autoload" />
+      <command value="s doctrine:generate:entity GrapheBundle:Classe" />
+      <command value="s doctrine:generate:form ClubBundle:search" />
+      <command value="s doctrine:generate:form ClubBundle:cserach" />
+      <command value="s doctrine:generate:form" />
+      <command value="s server:run" />
+      <command value="php -d memory_limit=-1 composer.phar update nomaya/social-bundle" />
+      <command value="php -d memory_limit=-1 composer.phar update  mgilet/notification-bundle" />
+      <command value="php -d memory_limit=-1 composer.phar update  knplabs/knp-paginator-bundle" />
+      <command value="CategorieREC" />
+      <command value="s debug:router" />
+      <command value="s cache:clear" />
+      <command value="c dump-autoload" />
+      <command value="s doctrine:schema:update --force" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0caab014-e81b-4fc3-922a-298bc4d943e0" name="Default Changelist" comment="" />
+      <created>1581172529757</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1581172529757</updated>
+      <workItem from="1581172636576" duration="9921000" />
+      <workItem from="1581253573887" duration="25866000" />
+      <workItem from="1581375606304" duration="4131000" />
+      <workItem from="1581379847538" duration="710000" />
+      <workItem from="1581435393816" duration="36769000" />
+      <workItem from="1581512541633" duration="2587000" />
+      <workItem from="1581515281669" duration="24446000" />
+      <workItem from="1581550317379" duration="13857000" />
+      <workItem from="1581797775585" duration="12358000" />
+      <workItem from="1582114456865" duration="23698000" />
+      <workItem from="1582141697463" duration="3862000" />
+      <workItem from="1582146565796" duration="12064000" />
+      <workItem from="1582572012083" duration="31018000" />
+      <workItem from="1582720670028" duration="8991000" />
+      <workItem from="1582731238018" duration="2149000" />
+      <workItem from="1582740471040" duration="23641000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/Resources/views/base.html.twig</url>
+          <line>368</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
