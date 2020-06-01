@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pag" layoutX="5.0" prefHeight="596.0" prefWidth="1132.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="velotn.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="810.0" fitWidth="1138.0" layoutX="-6.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../com/esprit/utils/elsetge.cat_windows-8-1-lock-screen_797053..jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="gererComp" alignment="BASELINE_CENTER" cancelButton="true" defaultButton="true" layoutX="947.0" layoutY="654.0" mnemonicParsing="false" onAction="#gererCompetition" text="gérer competition -&gt;" textFill="#050202">
+         <effect>
+            <Lighting bumpInput="$null" diffuseConstant="2.0">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="trier" layoutX="554.0" layoutY="504.0" mnemonicParsing="false" onAction="#trier" text="trier par solde">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="trierdate" layoutX="725.0" layoutY="504.0" mnemonicParsing="false" onAction="#trierdate" prefHeight="31.0" prefWidth="127.0" text="trier par date">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table_event" layoutX="319.0" layoutY="-2.0" prefHeight="496.0" prefWidth="811.0">
+        <columns>
+          <TableColumn fx:id="cid" prefWidth="98.0" text="id" />
+          <TableColumn fx:id="cnom" prefWidth="90.0" text="nom" />
+            <TableColumn fx:id="cfondateur" prefWidth="155.0" text="fondateur" />
+            <TableColumn fx:id="cdate" prefWidth="146.0" text="date" />
+            <TableColumn fx:id="csolde" prefWidth="162.0" text="solde" />
+        </columns>
+      </TableView>
+      <VBox alignment="CENTER" layoutX="-10.0" prefHeight="722.0" prefWidth="330.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Gérer vos club" textFill="#1ab9ae" textOverrun="WORD_ELLIPSIS">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="enom" prefHeight="31.0" prefWidth="216.0" promptText="nom club" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="330.0">
+               <children>
+                  <Label fx:id="error_name" prefHeight="26.0" prefWidth="333.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="efondateur" prefHeight="31.0" prefWidth="216.0" promptText="fondateur" />
+               </children>
+            </HBox>
+            <HBox prefHeight="58.0" prefWidth="330.0">
+               <children>
+                  <Label fx:id="error_img" prefHeight="21.0" prefWidth="329.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <DatePicker fx:id="edate" promptText="date" />
+               </children>
+            </HBox>
+            <HBox prefHeight="55.0" prefWidth="330.0">
+               <children>
+                  <Label fx:id="error_date_d" prefHeight="21.0" prefWidth="336.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="esolde" prefHeight="31.0" prefWidth="218.0" promptText="solde" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="51.0" prefWidth="330.0">
+               <children>
+                  <Label fx:id="error_date_f" prefHeight="21.0" prefWidth="328.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="51.0" prefWidth="330.0">
+               <children>
+                  <Label fx:id="error_nb" prefHeight="21.0" prefWidth="336.0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="Eajouter" mnemonicParsing="false" onAction="#ajouter" text="ajouter" textOverrun="CLIP">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="modifier" mnemonicParsing="false" onAction="#modifer_event" text="modifier">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Button>
+                  <Button fx:id="supprimer" mnemonicParsing="false" onAction="#supprimer_event" text="supprimer">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font></Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="give" layoutX="614.0" layoutY="581.0" mnemonicParsing="false" onAction="#give" prefHeight="31.0" prefWidth="169.0" text="donnée une prime">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="eprime" layoutX="605.0" layoutY="543.0" />
+   </children>
+</AnchorPane>
